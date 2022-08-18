@@ -1,0 +1,13 @@
+baseURL = 'http://example.org/'
+
+languageCode = 'es-ES'
+defaultContentLanguage = 'es'
+
+title = '0xBuilders page'
+titleCaseStyle = '0xBs'
+
+copyright = '© 2022 0xBuilders'
+
+enableRobotsTXT = true
+googleAnalytics = ""
+
