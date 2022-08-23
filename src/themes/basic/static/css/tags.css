@@ -1,0 +1,18 @@
+a.tag {
+    display: inline-block;
+    padding: 0.1em;
+    font-size: 0.9em;
+    text-decoration: none;
+
+    border-style: double;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+.html {
+    color: #ff6f00;
+}
+
+.software {
+    color: #a0aaff;
+}
