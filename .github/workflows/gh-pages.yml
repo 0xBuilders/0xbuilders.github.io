@@ -3,10 +3,8 @@ name: github pages deploy
 on:
   push:
     branches:
-      - gh-pages
-  pull_request:
-    branches:
       - main
+  pull_request:
 
 jobs:
   deploy:

@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://0xbuilders.github.io/'
 
 languageCode = 'es-ES'
 defaultContentLanguage = 'es'
