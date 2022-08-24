@@ -2,11 +2,11 @@ Leyenda:
 - RW: Requisito Web
 - RC: Requisito Cliente
 
-- [ ] RW.0 La web deberá ser responsive.
+- [x] RW.0 La web deberá ser responsive.
 - [x] RW.1 La web tendrá una "top nav bar".
 - [ ] RW.1.0 En la "top nav bar" se encontrará el logo de la organización.
 - [x] RW.1.1 En la "top nav bar" se encontrará el "sobre nosotros" de la organización.
-- [ ] RW.1.1.0 En la sección "sobre nosotros" se econtrarán las redes sociales.
+- [x] RW.1.1.0 En la sección "sobre nosotros" se econtrarán las redes sociales.
 - [x] RW.1.2 En la "top nav bar" se encontrará "Proyectos" la organización.
 - [x] RW.1.2.0 Los proyectos serán cogidos de la API de github.
 - [x] RW.1.3 En la "top nav bar" se ecnontrarán los "Posts".
@@ -21,6 +21,6 @@ Leyenda:
 
 
 - [x] RC.0.0 El cliente podrá ver los diferentes tipos de proyectos.
-- [ ] RC.0.1 El cliente podrá observar el estado de los distintos proyectos.
+- [x] RC.0.1 El cliente podrá observar el estado de los distintos proyectos.
 - [ ] RC.1.0 El cliente podrá unirse al servidor de discord con un click.
 - [x] RC.2 Una vez el cliente hace click sobre "Proyectos", encontrará lps proyectos más recientes de la organización.
