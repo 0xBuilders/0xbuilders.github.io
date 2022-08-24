@@ -2,11 +2,13 @@
     "accounts": [
         {
             "name": "Twitter",
-            "url": "#"
+            "url": "#",
+            "iconUrl": "twitter"
         },
         {
             "name": "LinkedIn",
-            "url": "#"
+            "url": "#",
+            "iconUrl": "linkedin"
         }
     ]
 }

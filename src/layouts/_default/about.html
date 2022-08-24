@@ -3,9 +3,14 @@
     {{ .Content }}
 
     <h3>Social Media</h3>
-    <ul>
-    {{ range .Site.Data.socialmedia.accounts }}
-        <li><a href= "{{ .url }}">{{ .name }}</a></li>
-    {{ end }}
-    </ul>
+    <div style="display: flex;">
+        {{ range .Site.Data.socialmedia.accounts }}
+            <div class="socialMedia">
+                <a href= "{{ .url }}">
+                    <img src="/{{ .iconUrl }}.svg" alt="{{ .name }} icon" />
+                </a>
+                <a href= "{{ .url }}">{{ .name }}</a>
+            </div> 
+        {{ end }}
+    </div>
 {{ end }}

@@ -2,10 +2,14 @@
 <h2>{{ .Title }}</h2>
 {{ .Content }}
 <section class="projects">
-    {{ range .Pages }}
-    <section class="project">
-        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    </section>
-    {{ end }}
+    <ul>
+        {{ range .Pages }}
+        <section class="project">
+            <li>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            </li>
+        </section>
+        {{ end }}
+    </ul>
 </section>
 {{ end }}

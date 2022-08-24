@@ -1,0 +1,8 @@
+<p>
+    Tags:
+    <span class="tags">
+        {{ range .Params.tags }}
+        <a class="tag {{ . }}" href="/tags/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </span>
+</p>
