@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    --text-color: #b1a89c;
+    --url-color: aliceblue;
+    --heads-color: #8f806d;
+    --nav-color: #fff;
+    --footer-color: var(--nav-color);
+
+    --nav-bgcolor: transparent;
+    --footer-bgcolor: transparent;
+
+    --header-size: xxx-large;
+    
+    --nav-bottom-high: 30px;
+
+    --font: 'Roboto Mono', monospace;
+}
