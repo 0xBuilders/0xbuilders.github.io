@@ -1,0 +1,183 @@
+@import url('./configuration.css');
+
+body {
+    background-color: #333;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+    font-family: var(--font);
+    color: var(--text-color);
+
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-size: var(--header-size);
+}
+
+a {
+    color: var(--url-color);
+}
+
+.title {
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    
+    color: var(--heads-color);
+}
+
+nav,
+footer {
+    color: var(--nav-color);
+    text-align: center;
+}
+
+footer {
+    position: sticky;
+    height: var(--nav-bottom-high);
+    top: calc( 100vh - var(--nav-bottom-high) );
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 2%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav > a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    height: auto;
+}
+
+article > header{
+    text-align: center;
+}
+
+.post-article {
+    margin: auto;
+}
+
+.metadata {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.metadata > div {
+    width: 50%;
+}
+
+.highlight {
+    width: 60%;
+    margin: auto;
+    overflow: overlay;
+}
+
+.highlight > pre {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.oss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.oss article {
+    border: 1px solid var(--text-color);
+    box-shadow: 3px 3px 3px #858585;
+    margin: 2%;
+    padding: 2%;
+    /* width: 30%; */
+}
+
+.author {
+    color: yellowgreen;
+}
+
+.date, .readingTime {
+    color: #e1e1e1;
+}
+
+.title-posts {
+    color: antiquewhite;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 1em auto;
+    padding: 0;
+}
+
+.pagination > .page-item {
+    border: 1px solid #ddd;
+    flex: 1;
+    text-align: center;
+    width: 5em;
+}
+
+.pagination .page-link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.pagination > .page-item.active {
+    background-color: #333;
+}
+
+.pagination > .page-item.active > .page-link {
+    color: #fff;
+}
+
+.pagination > .page-item.disabled > .page-link {
+    color: #ddd;
+}
+
+.socialMedia {
+    display: block;
+    writing-mode: vertical-lr;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+    }
+    
+    .pagination {
+        width: 30%;
+    }
+    
+    .project-container {
+        display: flex;
+    }
+
+    .project-container .project-list {
+        width: 20%;
+    }
+
+    .project-container .project {
+        flex: 1;
+    }
+
+    .post-article {
+        width: 50%;
+    }
+}

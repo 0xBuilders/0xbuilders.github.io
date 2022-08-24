@@ -1,0 +1,38 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+    {{ $urlDIY := printf "%s/%s/repos" .Site.Params.gh_organization .Site.Params.gh_org_DIY }}
+    {{ $url0x := printf "%s/%s/repos" .Site.Params.gh_organization .Site.Params.gh_org_0xbuilders }}
+
+    {{ $reposDIY := getJSON $urlDIY }}
+    {{ $repos0x := getJSON $url0x }}
+
+    <h2>Repos DIY the hard way</h2>
+    <section class= "oss">
+        {{ range $reposDIY }}
+        <article>
+            <h3><a href= "{{ .html_url }}">{{ .name }}</a></h3>
+            <p>{{ .description }}</p>
+            <p>Forks: {{ .forks }}</p>
+            <div>
+                Topics:
+                {{ range .topics }}
+                    <p>{{ . }}</p>
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
+    </section>
+
+    <h2>Repos 0xBuilders</h2>
+    <section class= "oss">
+        {{ range $repos0x }}
+        <article>
+            <h3><a href= "{{ .html_url }}">{{ .name }}</a></h3>
+            <p>{{ .description }}</p>
+        </article>
+        {{ end }}
+    </section>
+       
+
+{{ end }}

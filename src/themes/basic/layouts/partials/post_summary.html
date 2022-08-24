@@ -1,0 +1,10 @@
+<article class="post-article">
+    <header>
+        <h3>
+            <a class="title-posts" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <time>({{ .Date.Format "January 2, 2006" }})</time>
+        </h3>
+        {{- partial "tags.html" . -}}
+    </header>
+    {{ .Summary }}
+</article>

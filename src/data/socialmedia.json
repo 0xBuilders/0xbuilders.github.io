@@ -1,0 +1,14 @@
+{
+    "accounts": [
+        {
+            "name": "Twitter",
+            "url": "#",
+            "iconUrl": "twitter"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "#",
+            "iconUrl": "linkedin"
+        }
+    ]
+}
