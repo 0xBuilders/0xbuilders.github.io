@@ -1,0 +1,13 @@
+<article>
+    <h3><a href= "{{ .html_url }}">{{ .name }}</a></h3>
+    <p style="color: antiquewhite;">{{ .description }}</p>
+    <div>
+        <p>Forks: {{ .forks }}</p>
+        Topics:
+        <div>
+            {{ range .topics }}
+                <p>{{ . }}</p>
+            {{ end }}
+        </div>
+    </div>
+</article>
