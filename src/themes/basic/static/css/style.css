@@ -21,6 +21,8 @@ a {
     color: var(--url-color);
 }
 
+img[alt="0xbuilders logo"] { width: 200px; }
+
 .title {
     padding-top: 2%;
     padding-left: 10%;
