@@ -1,13 +1,47 @@
-.container {
-    margin: 0 auto;
-    width: 80%;
+@import url('./configuration.css');
+
+body {
+    background-color: #333;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+    font-family: var(--font);
+    color: var(--text-color);
+
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-size: var(--header-size);
+}
+
+a {
+    color: var(--url-color);
+}
+
+.title {
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    
+    color: var(--heads-color);
 }
 
 nav,
 footer {
-    background-color: #333;
-    color: #fff;
+    color: var(--nav-color);
     text-align: center;
+}
+
+footer {
+    position: sticky;
+    height: var(--nav-bottom-high);
+    top: calc( 100vh - var(--nav-bottom-high) );
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 2%;
 }
 
 nav {
@@ -15,11 +49,47 @@ nav {
     flex-direction: column;
 }
 
-nav>a {
+nav > a {
     flex: 1;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--nav-color);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    height: auto;
+}
+
+article > header{
+    text-align: center;
+}
+
+.post-article {
+    margin: auto;
+}
+
+.metadata {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.metadata > div {
+    width: 50%;
+}
+
+.highlight {
+    width: 60%;
+    margin: auto;
+    overflow: overlay;
+}
+
+.highlight > pre {
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .oss {
@@ -29,20 +99,23 @@ nav>a {
 }
 
 .oss article {
-    border: 1px solid #ddd;
-    box-shadow: 3px 3px 3px #ddd;
-    margin: 0.5%;
-    padding: 0.5%;
-    width: 30%;
+    border: 1px solid var(--text-color);
+    box-shadow: 3px 3px 3px #858585;
+    margin: 2%;
+    padding: 2%;
+    /* width: 30%; */
 }
 
-a.tag {
-    background-color: #ddd;
-    color: #333;
-    display: inline-block;
-    padding: 0.1em;
-    font-size: 0.9em;
-    text-decoration: none;
+.author {
+    color: yellowgreen;
+}
+
+.date, .readingTime {
+    color: #e1e1e1;
+}
+
+.title-posts {
+    color: antiquewhite;
 }
 
 .pagination {
@@ -53,13 +126,7 @@ a.tag {
     padding: 0;
 }
 
-@media only screen and (min-width: 768px) {
-    .pagination {
-        width: 30%;
-    }
-}
-
-.pagination>.page-item {
+.pagination > .page-item {
     border: 1px solid #ddd;
     flex: 1;
     text-align: center;
@@ -72,23 +139,32 @@ a.tag {
     text-decoration: none;
 }
 
-.pagination>.page-item.active {
+.pagination > .page-item.active {
     background-color: #333;
 }
 
-.pagination>.page-item.active>.page-link {
+.pagination > .page-item.active > .page-link {
     color: #fff;
 }
 
-.pagination>.page-item.disabled>.page-link {
+.pagination > .page-item.disabled > .page-link {
     color: #ddd;
+}
+
+.socialMedia {
+    display: block;
+    writing-mode: vertical-lr;
 }
 
 @media only screen and (min-width: 768px) {
     nav {
         flex-direction: row;
     }
-
+    
+    .pagination {
+        width: 30%;
+    }
+    
     .project-container {
         display: flex;
     }
@@ -99,5 +175,9 @@ a.tag {
 
     .project-container .project {
         flex: 1;
+    }
+
+    .post-article {
+        width: 50%;
     }
 }

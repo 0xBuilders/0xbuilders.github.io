@@ -15,3 +15,9 @@ Translated with www.DeepL.com/Translator (free version)
 The web page is open source. Made with [HUGO](https://gohugo.io/) and with help of [Build Websites with Hugo: Fast Web Development with Markdown](https://www.amazon.es/Build-Websites-Hugo-Development-Markdown/dp/1680507265)
 
 Copyright 2022 0xBuilders
+
+### Configuration
+![here](./setup.md)
+
+## Publish a post
+To publish a post you ought to read [it](./posts.md).

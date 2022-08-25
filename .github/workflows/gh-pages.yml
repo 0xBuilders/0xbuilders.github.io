@@ -3,14 +3,13 @@ name: github pages deploy
 on:
   push:
     branches:
-      - gh-pages
-  pull_request:
-    branches:
       - main
+  pull_request:
 
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    timeout-minutes: 4 # 4 minutes
     steps:
       - uses: actions/checkout@v2
         with:
@@ -31,6 +30,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          github_token: ${{ secrets.GH_PAGE }}
+          publish_dir: ./src/public
   
