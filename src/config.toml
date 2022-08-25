@@ -46,4 +46,4 @@ description = "0xBuilders webpage"
 
 gh_organization = "https://api.github.com/orgs"
 gh_org_DIY = "DIY-the-hard-way"
-gh_org_0xbuilders = "0xBuilders"
+gh_org_0xbuilders = "0xbuilders"

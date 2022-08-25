@@ -10,29 +10,14 @@
     <h2>Repos DIY the hard way</h2>
     <section class= "oss">
         {{ range $reposDIY }}
-        <article>
-            <h3><a href= "{{ .html_url }}">{{ .name }}</a></h3>
-            <p>{{ .description }}</p>
-            <p>Forks: {{ .forks }}</p>
-            <div>
-                Topics:
-                {{ range .topics }}
-                    <p>{{ . }}</p>
-                {{ end }}
-            </div>
-        </article>
+            {{- partial "repos.html" . -}}
         {{ end }}
     </section>
 
     <h2>Repos 0xBuilders</h2>
     <section class= "oss">
         {{ range $repos0x }}
-        <article>
-            <h3><a href= "{{ .html_url }}">{{ .name }}</a></h3>
-            <p>{{ .description }}</p>
-        </article>
+            {{- partial "repos.html" . -}}
         {{ end }}
     </section>
-       
-
 {{ end }}
