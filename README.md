@@ -18,3 +18,6 @@ Copyright 2022 0xBuilders
 
 ### Configuration
 ![here](./setup.md)
+
+## Publish a post
+To publish a post you ought to read [it](./posts.md).
