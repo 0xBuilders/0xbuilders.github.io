@@ -2,8 +2,28 @@
     "accounts": [
         {
             "name": "Twitter",
-            "url": "#",
+            "url": "https://twitter.com/0xbuilders",
             "iconUrl": "twitter"
+        },
+        {
+            "name": "GitHub - 0xbuilders",
+            "url": "https://github.com/0xBuilders",
+            "iconUrl": "github"
+        },
+        {
+            "name": "GitHub - DIY the hard way",
+            "url": "https://github.com/DIY-the-hard-way",
+            "iconUrl": "github"
+        },
+        {
+            "name": "Discord - 0xBuilders",
+            "url": "https://discord.gg/vFhrBajHp6",
+            "iconUrl": "discord"
+        },
+        {
+            "name": "Gmail - 0xbuildersorg@gmail.com",
+            "url": "mailto:0xbuildersorg@gmail.com",
+            "iconUrl": "gmail"
         }
     ]
 }
