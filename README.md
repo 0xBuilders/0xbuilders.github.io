@@ -1,5 +1,5 @@
 # 0xBuilders
-**0xBuilders** is a non-profit organization that likes to give away knowledge for free. This knowledge has a downside, it depends on the effort of the person.
+**0xBuilders** is group which likes to give away knowledge for free. This knowledge has a downside, it depends on the effort of the person.
 
 We like to give people a challenge to start creating things or learning new things. That's why we have different free programs:
 1. [DIY the hard way](https://github.com/DIY-the-hard-way)
@@ -17,7 +17,7 @@ The web page is open source. Made with [HUGO](https://gohugo.io/) and with help 
 Copyright 2022 0xBuilders
 
 ### Configuration
-![here](./setup.md)
+[here](./setup.md)
 
 ## Publish a post
 To publish a post you ought to read [it](./posts.md).
