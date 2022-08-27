@@ -156,6 +156,12 @@ article > header{
 .socialMedia {
     display: block;
     writing-mode: vertical-lr;
+    flex: 1 1 auto;
+    margin: 5px;
+}
+
+.socialMedia img {
+    width: 50px;
 }
 
 @media only screen and (min-width: 768px) {

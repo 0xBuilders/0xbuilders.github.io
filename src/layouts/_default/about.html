@@ -2,7 +2,9 @@
     <h2>{{ .Title }}</h2>
     {{ .Content }}
 
-    <h3>Social Media</h3>
+    <hr />
+
+    <h2>Social Media</h2>
     <div style="display: flex;">
         {{ range .Site.Data.socialmedia.accounts }}
             <div class="socialMedia">
