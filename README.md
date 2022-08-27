@@ -12,7 +12,7 @@ The second one is more oriented to learn by doing and between people, helping ea
 Translated with www.DeepL.com/Translator (free version)
 
 ### 0xBuilders page
-The web page is open source. Made with [HUGO](https://gohugo.io/) and with help of [Build Websites with Hugo: Fast Web Development with Markdown](https://www.amazon.es/Build-Websites-Hugo-Development-Markdown/dp/1680507265)
+The web page is open source. Made with [HUGO](https://gohugo.io/) and with help of [Build Websites with Hugo: Fast Web Development with Markdown]
 
 Copyright 2022 0xBuilders
 
