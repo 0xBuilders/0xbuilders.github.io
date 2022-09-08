@@ -8,11 +8,19 @@ a.tag {
     border-radius: 10px;
     padding: 2px 5px;
 }
+/* ------------------- lenguajes ------------------- */
 
-.html {
-    color: #ff6f00;
-}
+.C { color: deepskyblue; }
+.python { color: yellow }
+.html { color: #ff6f00; }
 
-.software {
-    color: #a0aaff;
-}
+/* ------------------- other ------------------- */
+
+.software { color: #a0aaff; }
+.Tutorial { color: lime; }
+
+/* -------------------------------- */
+
+/* ------------------- categories ------------------- */
+
+.Competitiva { color: #22e1d5; }

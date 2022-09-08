@@ -164,6 +164,12 @@ article > header{
     width: 50px;
 }
 
+p > code {
+    background: #282a36;
+    font-family: var(--font);
+    color: darkseagreen;
+}
+
 @media only screen and (min-width: 768px) {
     nav {
         flex-direction: row;
