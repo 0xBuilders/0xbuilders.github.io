@@ -21,6 +21,11 @@
             "iconUrl": "discord"
         },
         {
+            "name": "Telegram - 0xBuilders",
+            "url": "https://t.me/builders0x",
+            "iconUrl": "telegram"
+        },
+        {
             "name": "Gmail - 0xbuildersorg@gmail.com",
             "url": "mailto:0xbuildersorg@gmail.com",
             "iconUrl": "gmail"
